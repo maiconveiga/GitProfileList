@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container">
 
-      <input type="text" onBlur={(e) => { setNomeUsuaro(e.target.value) }} />
+      <input placeholder="Insira seu usuario git ex:maiconveiga" type="text" onBlur={(e) => { setNomeUsuaro(e.target.value) }} />
       {nomeUsuario.length > 4 && (
         <>
           <Perfil nome={nomeUsuario} />
